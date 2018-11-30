@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<CustomData>
+    <OptionGroups>
+        <OptionGroup>
+            <name>document_categories</name>
+            <title>Document categories</title>
+            <is_reserved>1</is_reserved>
+            <is_active>1</is_active>
+        </OptionGroup>
+        <OptionGroup>
+            <name>document_types</name>
+            <title>Document types</title>
+            <is_reserved>1</is_reserved>
+            <is_active>1</is_active>
+        </OptionGroup>
+    </OptionGroups>
+</CustomData>

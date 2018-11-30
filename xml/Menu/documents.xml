@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<menu>
+    <item>
+        <path>civicrm/documents/document</path>
+        <page_callback>CRM_Documentmanagement_Form_Document</page_callback>
+        <title>Document</title>
+        <access_callback>CRM_Documentmanagement_BAO_Document::pageAccess</access_callback>
+    </item>
+    <item>
+        <path>civicrm/documents/documents-contact</path>
+        <page_callback>CRM_Documentmanagement_Form_DocumentsContact</page_callback>
+        <title>Documents</title>
+        <access_callback>CRM_Documentmanagement_BAO_Document::viewAccess</access_callback>
+    </item>
+    <item>
+        <path>civicrm/documents/documents-search</path>
+        <page_callback>CRM_Documentmanagement_Form_DocumentsSearch</page_callback>
+        <title>Search documents</title>
+        <access_arguments>view_all_documents</access_arguments>
+    </item>
+    <item>
+        <path>civicrm/documents/get-documents</path>
+        <page_callback>CRM_Documentmanagement_AJAX::getDocuments</page_callback>
+        <access_arguments>access CiviCRM</access_arguments>
+    </item>
+    <item>
+        <path>civicrm/admin/options/document_categories</path>
+        <title>Document categories</title>
+        <desc>Define categories for document here.</desc>
+        <page_callback>CRM_Admin_Page_Options</page_callback>
+        <icon>admin/small/05.png</icon>
+        <weight>3</weight>
+    </item>
+    <item>
+        <path>civicrm/admin/options/document_types</path>
+        <title>Document types</title>
+        <desc>Define types for document here.</desc>
+        <page_callback>CRM_Admin_Page_Options</page_callback>
+        <icon>admin/small/05.png</icon>
+        <weight>3</weight>
+    </item>
+    <item>
+        <path>civicrm/ajax/get-contacts-ids-by-groups</path>
+        <page_callback>CRM_Documentmanagement_AJAX::getContactsIdsByGroups</page_callback>
+        <access_arguments>access CiviCRM</access_arguments>
+    </item>
+</menu>
